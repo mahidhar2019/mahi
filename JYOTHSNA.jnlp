@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp
+  spec="1.0+"
+  codebase="http://www.uworld.com/clients/17/" 
+  href="UWorldClient.jnlp">
+	<information os="Windows">
+      	<title>UWorld</title>
+      	<vendor>UWorld</vendor>
+    	<icon href="../images/uwicon.ico" kind="shortcut"/>
+		<icon kind="splash" href="../images/uwsplash.png"/>
+		<shortcut online="true">
+			<desktop/>
+			<menu submenu="UWorld"/>
+		</shortcut>
+   </information>
+ <information os="Mac">
+      	<title>UWorld</title>
+      	<vendor>UWorld</vendor>
+    	<icon href="../images/uwicon.png" kind="shortcut"/>
+		<icon kind="splash" href="../images/uwsplash.png"/>
+		<shortcut online="true">
+			<desktop/>
+			<menu submenu="UWorld"/>
+		</shortcut>
+   </information>
+  <security>
+      <all-permissions/>
+  </security>
+   <resources os="Mac">
+	<j2se version="1.8+" href="http://java.sun.com/products/autodl/j2se"/>
+	<jar href="jxbrowser-mac-6.18.jar"/>
+  </resources>
+  <resources>
+	<jar href="UWorldClient.jar" main="true"/>
+	<jar href="commons-codec-1.6.jar"/>
+	<jar href="commons-logging-1.1.1.jar"/>
+	<jar href="fluent-hc-4.2.jar"/>	
+	<jar href="httpclient-4.2.jar"/>	
+	<jar href="httpclient-cache-4.2.jar"/>	
+	<jar href="httpmime-4.2.jar"/>	
+	<jar href="httpcore-4.2.jar"/>
+	<jar href="jxbrowser-6.18.jar"/>
+	<jar href="licence.jar"/>	
+  </resources>
+  <resources os="Windows">
+		<j2se version="1.8+" href="http://java.sun.com/products/autodl/j2se"/>		
+		<jar href="pslist.jar"/>
+		<nativelib href="ntps.jar"/>
+		<jar href="jxbrowser-win32-6.18.jar"/>
+		<property name="java.net.preferIPv4Stack" value="true"/>		
+		<property name="sun.java2d.dpiaware" value="false"/>
+  </resources>
+  <application-desc main-class="com.uworld.launch.LaunchClient">	
+  </application-desc>
+</jnlp> 
